@@ -15,7 +15,7 @@ class _verticalNavState extends State<verticalNav> {
         getIcon(Icons.apple, 1, 20, 3),
         getIcon(Icons.paypal, 1, 20, 3),
         getIcon(FontAwesomeIcons.atlassian, 1, 15, 5),
-        getIcon(Icons.arrow_drop_down, .5, 20, 3),
+        getIcon(Icons.arrow_drop_down_outlined, .5, 20, 3),
       ],
     );
   }

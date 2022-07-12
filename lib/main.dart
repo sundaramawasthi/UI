@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ui/verticalnavBAR.dart';
 import 'package:ui/wishlistCard.dart';
+import 'package:badges/badges.dart';
 
 import 'buttom.dart';
 import 'buttomwishlist.dart';
 import 'middlePage.dart';
 
 void main() {
+  debugShowCheckedModeBanner:
+  false;
   runApp(const MyApp());
 }
 
@@ -44,13 +47,14 @@ class _FrontpageState extends State<Frontpage> {
             indx = index;
           });
         },
-        selectedIconTheme: IconThemeData(color: Colors.black87),
+        selectedIconTheme: IconThemeData(color: Color(0xff23ca96)),
         unselectedIconTheme:
             IconThemeData(color: Colors.black87.withOpacity(.5)),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home,
+              Icons.house,
+              size: 20,
             ),
             label: '',
           ),
@@ -65,20 +69,30 @@ class _FrontpageState extends State<Frontpage> {
             // ),
             icon: Container(
                 decoration:
-                    BoxDecoration(color: secondryColor, shape: BoxShape.circle),
+                    BoxDecoration(shape: BoxShape.circle, color: secondryColor),
                 child: Padding(
                     padding: EdgeInsets.all(8),
                     child: Icon(
                       FontAwesomeIcons.arrowRightArrowLeft,
+                      size: 15,
+                      color: Colors.black87,
                     ))),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.pie_chart),
+            icon: Container(
+              child: Icon(
+                Icons.candlestick_chart_outlined,
+                size: 25,
+              ),
+            ),
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: FaIcon(FontAwesomeIcons.user),
+            icon: FaIcon(
+              FontAwesomeIcons.user,
+              size: 15,
+            ),
             label: '',
           ),
         ],
@@ -111,18 +125,21 @@ class _FrontpageState extends State<Frontpage> {
                     const SizedBox(
                       width: 10,
                     ),
-                    Container(
-                      decoration: const BoxDecoration(
-                        color: Colors.white,
-                      ),
-                      child: const Icon(
-                        Icons.notifications,
+                    Badge(
+                      // badgeContent: Text(''),
+                      badgeColor: Colors.red,
+                      position: BadgePosition.topEnd(top: 14, end: 9),
+
+                      child: IconButton(
+                        // Use the FaIcon Widget + FontAwesomeIcons class for the IconData
+                        icon: FaIcon(FontAwesomeIcons.bell),
+                        onPressed: () {},
                       ),
                     )
                   ],
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 SizedBox(
                   width: double.infinity,
@@ -261,7 +278,7 @@ class _FrontpageState extends State<Frontpage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 15,
                 ),
                 const middle(),
                 const SizedBox(
@@ -309,12 +326,9 @@ class _FrontpageState extends State<Frontpage> {
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
                 buttom(),
-                SizedBox(
-                  height: 7,
-                ),
                 Container(
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height / 6,
@@ -348,9 +362,6 @@ class _FrontpageState extends State<Frontpage> {
                       ],
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 5,
                 ),
               ],
             ),

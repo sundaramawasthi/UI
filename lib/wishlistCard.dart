@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Wishlist extends StatelessWidget {
   String companyTitle;
   String companyName;
-  IconData? companyLogo = Icons.adobe;
+  IconData? companyLogo = Icons.add;
   double growth, val1, val2;
   Wishlist(
       {this.companyLogo,
