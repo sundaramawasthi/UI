@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Buttom extends StatelessWidget {
+class StocksActivityCard extends StatelessWidget {
   String companyTitle;
   String companyName, val3;
   Image companyLogo = Image.asset('Assets/icons8-nvidia-64.png');
   double growth, val1, val2;
-  Buttom(
+  StocksActivityCard(
       {required this.companyLogo,
       required this.companyName,
       required this.companyTitle,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class buttom extends StatefulWidget {
-  const buttom({Key? key}) : super(key: key);
+class StocksActivity extends StatefulWidget {
+  const StocksActivity({Key? key}) : super(key: key);
 
   @override
-  State<buttom> createState() => _buttomState();
+  State<StocksActivity> createState() => _StocksActivityState();
 }
 
-class _buttomState extends State<buttom> {
+class _StocksActivityState extends State<StocksActivity> {
   @override
   Widget build(BuildContext context) {
     return Container(

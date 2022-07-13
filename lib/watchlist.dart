@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class middle extends StatefulWidget {
-  const middle({Key? key}) : super(key: key);
+class Watchlist extends StatefulWidget {
+  const Watchlist({Key? key}) : super(key: key);
 
   @override
-  State<middle> createState() => _middleState();
+  State<Watchlist> createState() => _WatchlistState();
 }
 
-class _middleState extends State<middle> {
+class _WatchlistState extends State<Watchlist> {
   @override
   Widget build(BuildContext context) {
     return Container(
