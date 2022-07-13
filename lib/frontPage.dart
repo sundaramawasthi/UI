@@ -90,6 +90,7 @@ class _FrontpageState extends State<Frontpage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                // top header
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
@@ -125,14 +126,17 @@ class _FrontpageState extends State<Frontpage> {
                 const SizedBox(
                   height: 10,
                 ),
+                // profile view card
                 CardView(),
                 const SizedBox(
                   height: 15,
                 ),
+                // watchlist
                 const Watchlist(),
                 const SizedBox(
                   height: 15,
                 ),
+                // watchlist card
                 Container(
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height / 4,
@@ -177,7 +181,9 @@ class _FrontpageState extends State<Frontpage> {
                 SizedBox(
                   height: 5,
                 ),
+                // stock activity
                 StocksActivity(),
+                // stock activity card
                 Container(
                   width: double.infinity,
                   height: MediaQuery.of(context).size.height / 6,
