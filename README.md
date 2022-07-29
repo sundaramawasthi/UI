@@ -10,8 +10,7 @@ This project is a starting point for a Flutter application.
 CREATE A UI 
 
 
-[Dashboard!](https://github.com/sundaramawasthi/UI/blob/master/UI.jpg)
-
+![Dashboard]((https://github.com/sundaramawasthi/UI/blob/master/UI.jpg)
 
 A few resources to get you started if this is your first Flutter project:
 
